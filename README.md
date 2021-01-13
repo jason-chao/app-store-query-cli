@@ -13,13 +13,13 @@ npm install
 
 Command line argument:
 ```
-npm app-store-query -s [store name] -m [query method] -q [the query parameters formatted in JSON] -o [output filename]
+node index.js -s [store name] -m [query method] -q [the query parameters formatted in JSON] -o [output filename]
 ```
 
 Example:
 ```
-npm app-store-query -s google-play -m search -q '{"term":"vaccine"}' -o google_play_search_vaccine.json
-npm app-store-query -s app-store -m search -q '{"term":"vaccine"}' -o app_store_search_vaccine.json
+node index.js -s google-play -m search -q '{"term":"vaccine"}' -o google_play_search_vaccine.json
+node index.js -s app-store -m search -q '{"term":"vaccine"}' -o app_store_search_vaccine.json
 ```
 
 Query methods for both Google Play and Apple App Store:
@@ -32,4 +32,4 @@ Query methods for both Google Play and Apple App Store:
 - reviews: Retrieves a page of reviews for the app.
 - ratings: Retrieves the ratings for the app.
 
-See the documentation on [google-play-scraper](https://github.com/facundoolano/google-play-scraper) and [app-store-scraper](https://github.com/facundoolano/app-store-scraper) for the parameters available in each query method.
+See the documentation on [google-play-scraper](https://github.com/facundoolano/google-play-scraper) and [app-store-scraper](https://github.com/facundoolano/app-store-scraper) for the parameters for each query method.

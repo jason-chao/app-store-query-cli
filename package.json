@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "A command-line tool to query the popular app stores (Google Play and Apple App Store)",
   "main": "./index.js",
-  "scripts": {
-    "app-store-query": "node index.js"
-  },
   "bin": {
     "app-store-query": "./index.js"
   },
