@@ -20,10 +20,10 @@ const argv = require('yargs')
     .alias('i', 'query-file')
     .nargs('i', 1)
     .describe('i', 'The file containing a query formatted in json')
-    .alias('o', 'ouput-file')
+    .alias('o', 'output-file')
     .nargs('o', 1)
     .describe('o', 'The file to which query results will be written')
-    .demandOption(['m', 'q',])
+    .demandOption(['m'])
     .help('h')
     .alias('h', 'help');
 
@@ -60,7 +60,7 @@ function main() {
 
     try {
         if (args.i) {
-            query = string.read_json_file(args.q);
+            query = read_json_file(args.i);
         } else if (args.q) {
             query = JSON.parse(args.q);
         }
